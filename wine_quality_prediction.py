@@ -92,7 +92,18 @@ print(classification_report(Y_validation, predictions))
 
 #User input System:
 
+lst = [] 
+#n = float(input("Enter number of elements : ")) 
+  
+for i in range(0, 11): 
+   usr = float(input()) 
+   lst.append(usr)
+    
 
+lst=np.array(lst).reshape(1,11)
+prediction=rfc.predict(lst)
+
+print("The wine quality is",prediction)
 
 
 
